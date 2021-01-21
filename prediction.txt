@@ -1,0 +1,44 @@
+m02<-subset(dataset,	dataset$foto_mes	==	201902)				Concatenar
+							
+m18_	4	<-subset(dataset,dataset$foto_mes==	2018	0	4	)	m18_4<-subset(dataset,dataset$foto_mes==201804)
+m18_	5	<-subset(dataset,dataset$foto_mes==	2018	0	5	)	m18_5<-subset(dataset,dataset$foto_mes==201805)
+m18_	6	<-subset(dataset,dataset$foto_mes==	2018	0	6	)	m18_6<-subset(dataset,dataset$foto_mes==201806)
+m18_	7	<-subset(dataset,dataset$foto_mes==	2018	0	7	)	m18_7<-subset(dataset,dataset$foto_mes==201807)
+m18_	8	<-subset(dataset,dataset$foto_mes==	2018	0	8	)	m18_8<-subset(dataset,dataset$foto_mes==201808)
+m18_	9	<-subset(dataset,dataset$foto_mes==	2018	0	9	)	m18_9<-subset(dataset,dataset$foto_mes==201809)
+m18_	10	<-subset(dataset,dataset$foto_mes==	2018	0	10	)	m18_10<-subset(dataset,dataset$foto_mes==2018010)
+m18_	11	<-subset(dataset,dataset$foto_mes==	2018	0	11	)	m18_11<-subset(dataset,dataset$foto_mes==2018011)
+m18_	12	<-subset(dataset,dataset$foto_mes==	2018	0	12	)	m18_12<-subset(dataset,dataset$foto_mes==2018012)
+m19_	1	<-subset(dataset,dataset$foto_mes==	2019	0	1	)	m19_1<-subset(dataset,dataset$foto_mes==201901)
+m19_	2	<-subset(dataset,dataset$foto_mes==	2019	0	2	)	m19_2<-subset(dataset,dataset$foto_mes==201902)
+m19_	3	<-subset(dataset,dataset$foto_mes==	2019	0	3	)	m19_3<-subset(dataset,dataset$foto_mes==201903)
+							
+m18_4	_b1	<-	m18_4	"[clase_ternaria == ""BAJA+2"",numero_de_cliente]"			"m18_4_b1<-m18_4[clase_ternaria == ""BAJA+2"",numero_de_cliente]"
+m18_5	_b2	<-	m18_5	"[clase_ternaria == ""BAJA+2"",numero_de_cliente]"			"m18_5_b2<-m18_5[clase_ternaria == ""BAJA+2"",numero_de_cliente]"
+m18_6	_b2	<-	m18_6	"[clase_ternaria == ""BAJA+2"",numero_de_cliente]"			"m18_6_b2<-m18_6[clase_ternaria == ""BAJA+2"",numero_de_cliente]"
+m18_7	_b2	<-	m18_7	"[clase_ternaria == ""BAJA+2"",numero_de_cliente]"			"m18_7_b2<-m18_7[clase_ternaria == ""BAJA+2"",numero_de_cliente]"
+m18_8	_b2	<-	m18_8	"[clase_ternaria == ""BAJA+2"",numero_de_cliente]"			"m18_8_b2<-m18_8[clase_ternaria == ""BAJA+2"",numero_de_cliente]"
+m18_9	_b2	<-	m18_9	"[clase_ternaria == ""BAJA+2"",numero_de_cliente]"			"m18_9_b2<-m18_9[clase_ternaria == ""BAJA+2"",numero_de_cliente]"
+m18_10	_b2	<-	m18_10	"[clase_ternaria == ""BAJA+2"",numero_de_cliente]"			"m18_10_b2<-m18_10[clase_ternaria == ""BAJA+2"",numero_de_cliente]"
+m18_11	_b2	<-	m18_11	"[clase_ternaria == ""BAJA+2"",numero_de_cliente]"			"m18_11_b2<-m18_11[clase_ternaria == ""BAJA+2"",numero_de_cliente]"
+m18_12	_b2	<-	m18_12	"[clase_ternaria == ""BAJA+2"",numero_de_cliente]"			"m18_12_b2<-m18_12[clase_ternaria == ""BAJA+2"",numero_de_cliente]"
+m19_1	_b2	<-	m19_1	"[clase_ternaria == ""BAJA+2"",numero_de_cliente]"			"m19_1_b2<-m19_1[clase_ternaria == ""BAJA+2"",numero_de_cliente]"
+m19_2	_b2	<-	m19_2	"[clase_ternaria == ""BAJA+2"",numero_de_cliente]"			"m19_2_b2<-m19_2[clase_ternaria == ""BAJA+2"",numero_de_cliente]"
+m19_3	_b3	<-	m19_3	"[clase_ternaria == ""BAJA+2"",numero_de_cliente]"			"m19_3_b3<-m19_3[clase_ternaria == ""BAJA+2"",numero_de_cliente]"
+							
+							
+m19_2$mi_target <- m19_2$numero_de_cliente %in% m19_3_b2							
+							
+							
+							
+m18_5	$mi_target <-	m18_5	$numero_de_cliente %in% 	m18_4_b1			m18_5$mi_target <-m18_5$numero_de_cliente %in% m18_4_b1
+m18_6	$mi_target <-	m18_6	$numero_de_cliente %in% 	m18_5_b2			m18_6$mi_target <-m18_6$numero_de_cliente %in% m18_5_b2
+m18_7	$mi_target <-	m18_7	$numero_de_cliente %in% 	m18_6_b2			m18_7$mi_target <-m18_7$numero_de_cliente %in% m18_6_b2
+m18_8	$mi_target <-	m18_8	$numero_de_cliente %in% 	m18_7_b2			m18_8$mi_target <-m18_8$numero_de_cliente %in% m18_7_b2
+m18_9	$mi_target <-	m18_9	$numero_de_cliente %in% 	m18_8_b2			m18_9$mi_target <-m18_9$numero_de_cliente %in% m18_8_b2
+m18_10	$mi_target <-	m18_10	$numero_de_cliente %in% 	m18_9_b2			m18_10$mi_target <-m18_10$numero_de_cliente %in% m18_9_b2
+m18_11	$mi_target <-	m18_11	$numero_de_cliente %in% 	m18_10_b2			m18_11$mi_target <-m18_11$numero_de_cliente %in% m18_10_b2
+m18_12	$mi_target <-	m18_12	$numero_de_cliente %in% 	m18_11_b2			m18_12$mi_target <-m18_12$numero_de_cliente %in% m18_11_b2
+m19_1	$mi_target <-	m19_1	$numero_de_cliente %in% 	m18_12_b2			m19_1$mi_target <-m19_1$numero_de_cliente %in% m18_12_b2
+m19_2	$mi_target <-	m19_2	$numero_de_cliente %in% 	m19_1_b2			m19_2$mi_target <-m19_2$numero_de_cliente %in% m19_1_b2
+m19_3	$mi_target <-	m19_3	$numero_de_cliente %in% 	m19_2_b2			m19_3$mi_target <-m19_3$numero_de_cliente %in% m19_2_b2
